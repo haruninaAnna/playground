@@ -9,22 +9,20 @@
 
 <section class="prices">
     <h1>Цены</h1>
-    <ul class="prices--table">
-        {% set abcd=  [
-            ['Наименование', 'Кол-во', 'Цена'],
-            ['Уроки', '100', '200'],
-            ['ДЗ', '100', '200'],
-            ['Консультации', '100', '200']
-        ]% }
-        {% for a in abcd % }
-            <li>{{a}}
-                {{b}}
-                {{c}}
-                {{d}}
-            <li>
-        
-        
-        { % endfor %}
-    </ul>
+        <table border="2" class="prices--table">
+            {% set tableData=  [
+                ['Наименование', 'Кол-во', 'Цена'],
+                ['Уроки', '100', '200'],
+                ['ДЗ', '100', '200'],
+                ['Консультации', '100', '200']
+            ] %}
+            {% for row in tableData %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                </tr>
+            {% endfor %}          
+        </table>
 
 </section>
