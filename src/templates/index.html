@@ -11,14 +11,15 @@
         <h1>Список услуг</h1>
         <ul class="services--list">
             {% set abc=[ 'Уроки', ' ДЗ', 'Консультации' ] %}
-            {% for a in abc % }
+            {% for a in abc %}
             <li class="services--item">
                 {{a}}
             </li>
-           { % endfor %}
+           {% endfor %}
         </ul>
     </section>
 
 </main>
 
 {% include 'parts/_foot.html' %}
+

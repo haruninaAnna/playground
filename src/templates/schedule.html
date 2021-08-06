@@ -5,14 +5,16 @@
 
 {% include 'parts/_header.html' %}
 
-{% include 'parts/_foot.html' %}
 
 <section class="schedule">
     <h1>Расписание</h1>
-    {% set items =['Пн: Уроки, ДЗ'], ['Вт: Уроки, ДЗ'], ['Ср: Уроки, ДЗ'], ['Чт: Уроки, ДЗ'], ['Пт: Консультация'], ['Сб, Вс: выходной'] %}
+    {% set items = ['Пн: Уроки, ДЗ', 'Вт: Уроки, ДЗ', 'Ср: Уроки, ДЗ', 'Чт: Уроки, ДЗ', 'Пт: Консультация', 'Сб, Вс: выходной'] %}
     <ul class="schedule--list">
        {% for item in items %}
        <li>{{item}}</li>
        {% endfor %}
     </ul>
 </section>
+
+
+{% include 'parts/_foot.html' %}
