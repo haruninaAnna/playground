@@ -6,7 +6,6 @@
 
 
 
-
 .main-header {
 	padding: 20px;
 	background-color: #eee;
@@ -24,6 +23,24 @@
 }
 
 
+
+.example{
+	.block{
+		height: 100px;
+		background-color: crimson;
+		.size(3);
+		margin-top: 20px;
+		.col();
+}
+
+.example__h{
+	color: black; 
+}
+
+
+
+
+
 html,
 body{
 	box-sizing: border-box;
@@ -36,7 +53,7 @@ body{
 }
 
 body{
-	background-color: #777;
+	background-color: #fff;
 	color: #fff;
 	font-family: 'Montserrat', 'Open Sans', 'Arial', sans-serif;
 	max-width: 1920px;
@@ -130,9 +147,14 @@ a{
 
 .wrapper{
 	.wrapper();
+	
 }
 
 .row{
+	background-color: grey;
+	padding: 10px;
+	padding-top: 0;
+	margin: 0;
 	.row-flex();
 }
 
